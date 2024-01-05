@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissor</title>
+    <link rel="stylesheet" href="stonepaperscissorgame.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><button id="home" class="btn" onclick="home()">Home</button></li>
+            <li><button class="btn" onclick="showregisterform()">Register with Us </button></li>
+            <li><button class="btn" onclick="showloginform()">Login with Us </button></li>
+        </ul>
+    </nav>
+    <div class="welcome">
+        <p id="t1" class="t1">WELCOME TO THE OG "STONE PAPER SCISSOR" GAME</p>
+        <div id="choice" class="choice">
+            <button class="btn cen" onclick="choice()">Lets GO.....</button>
+        </div>
+        <div id="c" class="c">
+            <button class="btn ch" onclick="showloginform()">Login</button> <br>
+            <button class="btn ch" onclick="showregisterform()">Register</button>
+        </div>
+        <div id="register" class="register">
+            <div class="c1">
+            <h1 class="t2">REGISTER</h1>
+            <h4 class="name">Enter Name</h4>
+            <input type="text" placeholder="NAME">
+            <h4 class="name">Enter Username</h4>
+            <input type="text" placeholder="username">
+            <h4 class="name">Create Password</h4>
+            <input type="password" placeholder="Password">
+            <h4 class="name">Enter a secret code</h4>
+            <input type="password" placeholder="Code"><br>
+            <button class="btn submit" onclick="ty()">SUBMIT</button>
+        </div>
+        </div>
+        <div id="login" class="login">
+            <div class="c2">
+                <h1 class="t3">Login</h1>
+                <h4 class="name">Enter Username</h4>
+                <input type="text" placeholder="Username">
+                <h4 class="name">Enter Password</h4>
+                <input type="password" placeholder="password">
+                <br>
+                <button class="btn submit1" onclick="ty1()">SUBMIT</button>
+            </div>
+        </div>
+        <div id="ty" class="ty"><h2>Thank you!</h2>
+        <br>
+        <button id="mtg" class="btn" onclick="game()">Lets move to the game</button>
+        <center><button id="mtl" class="btn" onclick="showloginform()">Login</button></center>
+        </div>
+        <div id="game" class="game">
+            <p class="select">Select your choice</p>
+            <div class="i">
+            <button class="stone icon btn" onclick="result()"><img src="https://emojigraph.org/media/google/rock_1faa8.png" alt=""></button>
+            <button class="paper icon btn" onclick="result()"><img src="https://cdn.pixabay.com/photo/2012/04/01/17/31/paper-23652_1280.png" alt="" height="240vh"></button>
+            <button class="scissor icon btn" onclick="result()"><img src="https://static-00.iconduck.com/assets.00/scissors-emoji-1024x1024-th0si28a.png" alt="" height="240vh"></button>
+        </div>
+        <div class="resul">
+            <p class="result">RESULT</p>
+            <div class="res"><div id="win" class="win">You win</div><div id="loose" class="loose">You loose</div><div id="draw" class="draw">Its a draw</div><div id="e" class="e">TRY AGAIN</div></div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="spsgame.js"></script>
+</body>
+</html>
